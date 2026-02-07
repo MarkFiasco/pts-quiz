@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <title>Personal Track Safety (PTS) Quiz - Multiple Choice Questions</title>
+  <meta name="description" content="Personal Track Safety (PTS) quiz with multiple choice questions.">
+  <meta name="keywords" content="PTS, Personal Track Safety, quiz, practice test, mock test, revision, multiple choice, safety exam, railway safety, PTS online quiz, PTS revision questions, PTS exam practice, track safety training, UK rail safety, safety assessment, PTS MCQs, rail worker training, UK PTS practice quiz online, PTS multiple choice questions for revision, Personal Track Safety test preparation, free PTS mock test, PTS exam practice questions and answers, vocational training, self-assessment quiz, railway safety test prep">
+  <link rel="canonical" href="https://markfiasco.github.io/pts-quiz/">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <rect width="24" height="24" rx="6" fill="#0b66ff"/>
+      <path d="M7 8h10M7 12h10M7 16h6" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <div>
+      <h1>Personal Track Safety (PTS) Quiz</h1>
+      <p class="meta">Multiple Choice • Use keys 1-8 • Next & Finish: Enter • Previous: ← • Exit: Esc</p>
+    </div>
+  </header>
+
+  <section id="startScreen" class="card">
+    <h2 id="startScreenTitle">Personal Track Safety (PTS) Quiz</h2>
+    <p style="color:var(--muted); margin-top:6px;">
+      When you're ready, click Start to begin the test.
+    </p>
+    <button id="startBtn" style="margin-top:18px; padding:12px 24px; font-size:16px;">Start Test</button>
+  </section>
+
+  <main id="app" class="card" style="display:none;" role="main">
+    <header class="question-header">
+      <span>Question <strong id="qLeft">1</strong></span>
+      <span id="timerInline">00:00</span>
+    </header>
+
+    <article id="questionArea" class="question-area" aria-live="polite"></article>
+
+    <nav class="controls" aria-label="Question Navigation">
+      <button id="prevBtn" class="ghost small">← Previous</button>
+      <button id="nextBtn" class="small">Next →</button>
+      <div class="progress"><i id="progressBar"></i></div>
+      <div style="flex-shrink:0;text-align:right;">
+        <span class="hint">Question <strong id="qIndex">1</strong> / <span id="qTotal">0</span></span>
+      </div>
+    </nav>
+
+    <footer class="footer">
+      <button id="resetBtn" class="small" style="background:#dc2626;">Exit Test</button>
+    </footer>
+
+    <div id="results" class="results" aria-live="polite"></div>
+  </main>
+
+  <p style="margin-top:12px;color:var(--muted);font-size:13px;">
+    This quiz is for practice purposes only and is not an official certification exam.
+  </p>
+</div>
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Quiz",
+    "name": "Personal Track Safety (PTS) Practice Quiz",
+    "description": "Multiple choice practice questions for UK Personal Track Safety (PTS), for practice purposes only",
+    "educationalUse": "Practice",
+    "learningResourceType": "Quiz",
+    "inLanguage": "en-GB",
+    "isAccessibleForFree": true,
+    "audience": {
+      "@type": "Audience",
+      "educationalRole": "Student",
+      "geographicArea": {
+        "@type": "Country",
+        "name": "United Kingdom"
+      }
+    },
+    "url": "https://markfiasco.github.io/pts-quiz/"
+  }
+  
+</script>
+
+<script src="data/questions.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
